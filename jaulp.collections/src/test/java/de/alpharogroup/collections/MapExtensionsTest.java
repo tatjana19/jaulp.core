@@ -116,6 +116,12 @@ public class MapExtensionsTest
 	@Test
 	public void testNewAssosiativeArrayMap()
 	{
+		// in js you can create and fetch associative arrays like this:
+// $arr[0]['firstName'] = 'Albert';
+// $arr[0]['lastName'] = 'Einstein';
+// $arr[1]['firstName'] = 'Neal';
+// $arr[1]['lastName'] = 'Armstrong';
+// to do the same in java we can do as the following code:
 		final Map<Integer, Map<String, String>> arrayMap = MapExtensions.newAssosiativeArrayMap();
 
 		arrayMap.get(0).put("firstName", "Albert");
